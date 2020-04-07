@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*******VIEW*******/
+
+.credit-card-container {
+    display: flex;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.credit-card-company {
+    text-align: right;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.credit-card {
+    width: 350px;
+    background-color: #144469;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.credit-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credit-card-content {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.credit-card-chip {
+    max-width: 30px;
+}
+
+.credit-card-validthru {
+    text-align: right;
+}
+
+.credit-card-logo {
+    max-width: 80px;
+}
+
+.credit-card-logo-bloc {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/*******FORM*******/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    display: block;
+    margin: 10px 5px;
+    min-width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #144469;
+}
+
+input:focus {
+    outline: none;
 }
